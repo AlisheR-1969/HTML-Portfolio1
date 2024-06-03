@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://127.0.0.1:5500/Project%202/index2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Portfolio1</title>
+    <link rel="stylesheet" href="./My Portfolio1_files/styles.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            color: blanchedalmond;
+            text-align: center;
+            padding: 1 rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+        }
+        h1, h2 {
+            margin-bottom: 1rem;}
+            p {margin-bottom: 0.5rem;}
+            .project {
+                margin-bottom: 2rem;
+                padding: 1rem;
+                background-color: blanchedalmond;
+           
+            border-radius: 5px;
+            box-shadow: 0  2px 5px rgba(0, 0, 0, 0,1);
+            }
+    </style>
+</head>
+<body>
+ <header> <h1>My Portfolio1</h1>
+<p>Wellcome!</p>
+</header>
+<div class="container">
+<section id="about">
+    <h2>about me</h2>
+    <p> Hello! My name is Alisher ,
+         i am a web developer.
+         And i also specialize in developing web applications using technologies
+          HTML, CSS, JAVASCRIPT.</p>
+</section>
+<section id="projects">
+    <h2>PROJECTS</h2>
+    <div class="project">
+<h3>Project1</h3>
+<p>Description</p>
+<p>Technologies: HTML , CSS , Javascript.</p>
+<p><a href="http://127.0.0.1:5500/Project%202/index2.html#"></a></p>
+    </div>
+
+    <!-- Ad projects to portfolio here!-->
+</section>
+<section id="scills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <!-- ad my  scills, if you need !-->
+    </ul>
+</section>
+<footer>
+    <p>Alisher Rakhmatov, alisherrakhmat@gmail.com</p>
+</footer>
+</div>   
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
+
